@@ -1,0 +1,5 @@
+PWD=`pwd`
+
+[ ! -d $PWD/node_modules ] && ~/.nvm/v0.10.38/bin/npm install
+
+~/.nvm/v0.10.38/bin/node $PWD/server/app.js 2>&1 > $PWD/logs/message.log &
